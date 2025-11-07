@@ -22,17 +22,17 @@ while game_running:
     move = input("Enter move (w/a/s/d or q to quit): ")
 
     # Movement
-    if move == "w":
+    if move == "up":
         globals()[f"{player_var}_y"] += 1
-    elif move == "s":
+    elif move == "down":
         globals()[f"{player_var}_y"] -= 1
-    elif move == "a":
+    elif move == "left":
         globals()[f"{player_var}_x"] -= 1
-    elif move == "d":
+    elif move == "right":
         globals()[f"{player_var}_x"] += 1
     
     # Quit game
-    elif move == "q":
+    elif move == "quit":
         print("Game exited.")
         game_running = False
         continue
@@ -43,3 +43,4 @@ while game_running:
     if globals()[f"{player_var}_x"] == treasure_x and globals()[f"{player_var}_y"] == treasure_y:
         print("WIN! You found the treasure!")
         game_running = False
+
