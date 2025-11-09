@@ -2,3 +2,14 @@
 2. Programmers use the command line because it's faster and more powerful.
 3. C:/Users/yourname
 4. The file is README.md and it contains a description written in markdown.
+
+diff --git a/Answers.txt b/Answers.txt
+index 057d264..fb83ace 100644
+--- a/Answers.txt
++++ b/Answers.txt
+@@ -1,4 +1,5 @@
+ 1. They allow Git to run easier by giving tools like a GUI and terminal integration.
+ 2. Programmers use the command line because it's faster and more powerful.
+ 3. C:/Users/yourname
+-4. The file is README.md and it contains a description written in markdown.
+\ No newline at end of file
