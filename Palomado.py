@@ -2,6 +2,7 @@ first_name = "YOURFIRSTNAME"
 last_name = "YOURLASTNAME"
 
 print("Welcome to Palomado's Maze")
+print("Instructions: Use up, left, right, down to move through the maze!")
 
 # Example: If first_name = "JANICE" → janice_x, janice_y
 player_var = first_name.lower()
