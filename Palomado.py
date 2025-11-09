@@ -1,6 +1,8 @@
 first_name = "YOURFIRSTNAME"
 last_name = "YOURLASTNAME"
 
+print("Welcome to Palomado's Maze")
+
 # Example: If first_name = "JANICE" → janice_x, janice_y
 player_var = first_name.lower()
 globals()[f"{player_var}_x"] = 0
@@ -19,7 +21,7 @@ print(f"Find the treasure at ({treasure_x}, {treasure_y})!")
 print(f"Your player variable name is: {player_var}_x and {player_var}_y")
 
 while game_running:
-    move = input("Enter move (w/a/s/d or q to quit): ")
+    move = input("Enter move (up/left/down/right): ")
 
     # Movement
     if move == "up":
@@ -31,12 +33,6 @@ while game_running:
     elif move == "right":
         globals()[f"{player_var}_x"] += 1
     
-    # Quit game
-    elif move == "quit":
-        print("Game exited.")
-        game_running = False
-        continue
-
     print(f"Player position: ({globals()[f'{player_var}_x']}, {globals()[f'{player_var}_y']})")
 
     # Win condition
